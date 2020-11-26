@@ -64,10 +64,12 @@ a {
 
 .menu {
   background-color: white;
-  height: 100%;
+  height: 100vh;
   width: 400px;
   background-attachment: fixed;
-  position: absolute;
+  position: fixed;
+  overflow-y: scroll;
+  overflow-x: hidden;
   transition: 0.5s linear;
   transform: translateX(-100%);
   z-index: 1;

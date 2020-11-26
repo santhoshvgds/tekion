@@ -3,8 +3,8 @@ import SlideNav from "../slideNav";
 import "./index.css";
 
 const index = () => {
-  const [menuStatus, setMenuStatus] = useState("close");
-  const [style, setStyle] = useState("menu");
+  const [menuStatus, setMenuStatus] = useState("open");
+  const [style, setStyle] = useState("menu active");
   const handleClickSildeBar = () => {
     switch (menuStatus) {
       case "open":
