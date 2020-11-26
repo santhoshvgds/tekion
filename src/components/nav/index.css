@@ -24,6 +24,10 @@ a {
 .brand-name {
   display: inline-block;
 }
+.nav-menu:hover,
+.nav-left .request-demo h4:hover {
+  cursor: pointer;
+}
 .nav-left {
   float: right;
 }
@@ -56,4 +60,21 @@ a {
 .nav-left .request-demo h4:hover {
   background-color: black;
   color: white;
+}
+
+.menu {
+  background-color: white;
+  height: 100%;
+  width: 400px;
+  background-attachment: fixed;
+  position: absolute;
+  transition: 0.5s linear;
+  transform: translateX(-100%);
+  z-index: 1;
+}
+.active {
+  opacity: 1;
+  visibility: visible;
+  transition: 0.5s linear;
+  transform: translateX(0);
 }

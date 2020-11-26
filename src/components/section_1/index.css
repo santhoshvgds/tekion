@@ -1,0 +1,29 @@
+.section-1 {
+  background-image: url("../../assets/images/0f40c79d06f5b302e3ccc989086980bf.jpg");
+  height: 100%;
+  background-size: cover;
+  background-position-y: 48px;
+}
+.section-1-content {
+  font-family: Inter, sans-serif;
+  color: white;
+  padding: 45vh 0px 15vh 0px;
+  justify-content: center;
+  text-align: center;
+}
+.section-1-content h1 {
+  letter-spacing: -1.25px;
+  font-size: 50px;
+  margin-bottom: 30px;
+}
+.section-1-content .section-1-button {
+  display: inline-block;
+}
+.section-1-content .section-1-button h3 {
+  color: black;
+  background-color: #05deba;
+  font-size: 16px;
+  padding: 12px 33px;
+
+  border-radius: 30px;
+}

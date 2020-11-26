@@ -1,6 +1,5 @@
 const path = require("path");
 const HtmlWebPackPlugin = require("html-webpack-plugin");
-
 module.exports = {
   output: {
     path: path.resolve(__dirname, "build"),
@@ -31,6 +30,12 @@ module.exports = {
             loader: "css-loader",
           },
         ],
+      },
+      {
+        test: /\.(jpg|png)$/,
+        loader: "url-loader",
+        // loader: "file?name=[path][name].[ext]",
+        include: path.join(__dirname, "src/assets/images"),
       },
     ],
   },
