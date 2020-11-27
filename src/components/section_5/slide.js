@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Image1 from "../../assets/images/e128821add45bdbd8531a0bbf77cb25c.png";
 import Image2 from "../../assets/images/982b60a8dc22db6c9547bc4e85ebd781.png";
 import Image3 from "../../assets/images/b9c7e8870fe0ac0401f06cbb1de85621.png";
@@ -33,34 +33,23 @@ const slide = () => {
       position: "General Manager,Gilroy Buick GMC",
     },
   ];
-  const [currSlide, setcurrSlide] = useState(allSlide[0]);
-  const [dot, setdot] = useState([
-    {
-      0: "active",
-      1: "",
-      2: "",
-      3: "",
-    },
-  ]);
+  const dots = new Array(4).fill(0);
   const [i, seti] = useState(0);
-  // setInterval(() => {
-  //   if (i < 4) {
-  //     seti(i + 1);
-  //     setcurrSlide(allSlide[i]);
-  //   } else {
-  //     seti(0);
-  //     setcurrSlide(allSlide[i]);
-  //   }
-  //   console.log(i);
-  // }, 2000);
+  useEffect(() => {
+    setTimeout(() => {
+      seti(i == allSlide.length - 1 ? 0 : i + 1);
+      // console.log(i);
+    }, 2000);
+  }, [i]);
+
   const changeCurrSlide = (index) => {
-    setcurrSlide(allSlide[index]);
+    seti(index);
   };
   return (
     <div>
       <div className="slide">
         <div className="slide-img">
-          <img src={currSlide.img} />
+          <img src={allSlide[i].img} />
           <svg
             className="player"
             height="56"
@@ -84,20 +73,23 @@ const slide = () => {
         </div>
         <div className="slidebar-content">
           <h4>
-            <em>{currSlide.content}</em>
+            <em>{allSlide[i].content}</em>
           </h4>
           <p className="person-name">
-            <b>{currSlide.name}</b>
+            <b>{allSlide[i].name}</b>
           </p>
-          <p className="person-position">{currSlide.position}</p>
+          <p className="person-position">{allSlide[i].position}</p>
         </div>
       </div>
       <div className="slide-dots">
         <ul>
-          <li className={dot[0]} onClick={() => changeCurrSlide(0)}></li>
-          <li className={dot[1]} onClick={() => changeCurrSlide(1)}></li>
-          <li className={dot[2]} onClick={() => changeCurrSlide(2)}></li>
-          <li className={dot[3]} onClick={() => changeCurrSlide(3)}></li>
+          {dots.map((a, _index) => (
+            <li
+              key={_index}
+              className={i == _index ? "active" : ""}
+              onClick={() => changeCurrSlide(_index)}
+            ></li>
+          ))}
         </ul>
       </div>
     </div>

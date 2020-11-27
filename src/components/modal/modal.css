@@ -12,7 +12,8 @@
   background-color: white;
   opacity: 1;
   z-index: 1000;
-  position: fixed;
   visibility: visible;
   transform: translateX(0);
+
+  position: fixed;
 }

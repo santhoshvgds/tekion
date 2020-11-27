@@ -56,11 +56,11 @@ select {
   color: gray;
 }
 select {
-  width: 198px;
+  width: 190px;
   background-color: white;
 }
 textarea {
-  width: 73%;
+  width: 78%;
 
   border: none;
   border-bottom: 1px solid gray;

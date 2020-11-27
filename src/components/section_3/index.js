@@ -21,22 +21,24 @@ const index = () => {
     }
   };
   return (
-    <div className="section-3">
+    <React.Fragment>
       <div className={modalStyle}>
         <Model modalClose={handleModelToggle} />
       </div>
-      <div className="row-1">
-        <h1>
-          One platform that seamlessly
-          <br />
-          connects your entire business
-        </h1>
-        <div className="section-3-button">
-          <h3 onClick={handleModelToggle}>Contact Us</h3>
+      <div className="section-3">
+        <div className="row-1">
+          <h1>
+            One platform that seamlessly
+            <br />
+            connects your entire business
+          </h1>
+          <div className="section-3-button">
+            <h3 onClick={handleModelToggle}>Contact Us</h3>
+          </div>
         </div>
+        <div className="row-2"></div>
       </div>
-      <div className="row-2"></div>
-    </div>
+    </React.Fragment>
   );
 };
 
