@@ -34,9 +34,10 @@ const slide = () => {
     },
   ];
   const dots = new Array(4).fill(0);
+  var intervel;
   const [i, seti] = useState(0);
   useEffect(() => {
-    setTimeout(() => {
+    intervel = setTimeout(() => {
       seti(i == allSlide.length - 1 ? 0 : i + 1);
       // console.log(i);
     }, 2000);
@@ -44,6 +45,7 @@ const slide = () => {
 
   const changeCurrSlide = (index) => {
     seti(index);
+    clearInterval(intervel);
   };
   return (
     <div>
