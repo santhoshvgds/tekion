@@ -45,7 +45,7 @@ const slide = () => {
 
   const changeCurrSlide = (index) => {
     seti(index);
-    clearInterval(intervel);
+    // clearInterval(intervel);
   };
   return (
     <div>
