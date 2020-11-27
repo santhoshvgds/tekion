@@ -1,0 +1,18 @@
+.modal {
+  background-color: white;
+  height: 100vh;
+  width: 100vh;
+  position: fixed;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  transform: translateX(-100%);
+  z-index: 1000;
+}
+.modal-active {
+  background-color: white;
+  opacity: 1;
+  z-index: 1000;
+  position: fixed;
+  visibility: visible;
+  transform: translateX(0);
+}

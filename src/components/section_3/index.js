@@ -1,40 +1,30 @@
-import React from "react";
+import React, { useState } from "react";
 import "./index.css";
-import ReactModal from "react-modal";
 import Model from "../modal";
-const customStyles = {
-  content: {
-    transform: "translate(-0%, -293%)",
-    border: "none",
-    backgroundColor: "white",
-    zIndex: "150",
-    position: "fixed",
-    width: "213vh",
-    overflow: "hidden",
-  },
-};
-
+import "../modal/modal.css";
 const index = () => {
-  const [showModal, setshowModal] = React.useState(false);
-  const handleOpenModal = () => {
-    setshowModal(true);
-  };
-  const handleCloseModal = () => {
-    setshowModal(false);
+  const [modalStyle, setmodalStyle] = useState("modal");
+  const [showModal, setshowModal] = useState("open");
+  const handleModelToggle = () => {
+    console.log("dd");
+    switch (showModal) {
+      case "open":
+        setshowModal("close");
+        setmodalStyle("modal-active");
+        break;
+      case "close":
+        console.log("object");
+        setshowModal("open");
+        setmodalStyle("modal");
+        console.log(modalStyle);
+        break;
+    }
   };
   return (
     <div className="section-3">
-      <ReactModal
-        appElement={document.getElementById("body")}
-        isOpen={showModal}
-        contentLabel="onRequestClose Example"
-        onRequestClose={handleCloseModal}
-        style={customStyles}
-        className="Modal"
-        overlayClassName="Overlay"
-      >
-        <Model modalClose={handleCloseModal} />
-      </ReactModal>
+      <div className={modalStyle}>
+        <Model modalClose={handleModelToggle} />
+      </div>
       <div className="row-1">
         <h1>
           One platform that seamlessly
@@ -42,15 +32,10 @@ const index = () => {
           connects your entire business
         </h1>
         <div className="section-3-button">
-          <h3 onClick={handleOpenModal}>Contact Us</h3>
+          <h3 onClick={handleModelToggle}>Contact Us</h3>
         </div>
       </div>
       <div className="row-2"></div>
-      <div>
-        <li></li>
-        <li></li>
-        <li></li>
-      </div>
     </div>
   );
 };

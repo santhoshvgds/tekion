@@ -65,7 +65,7 @@ a {
   color: white;
 }
 
-.menu {
+.slide-nav {
   background-color: white;
   height: 100vh;
   width: 400px;
@@ -77,9 +77,10 @@ a {
   transform: translateX(-100%);
   z-index: 1000;
 }
-.active {
+.nav-active {
   opacity: 1;
   visibility: visible;
   transition: 0.5s linear;
+  width: 400px;
   transform: translateX(0);
 }

@@ -1,13 +1,66 @@
-import React from "react";
+import React, { useState } from "react";
 import Image1 from "../../assets/images/e128821add45bdbd8531a0bbf77cb25c.png";
-
+import Image2 from "../../assets/images/982b60a8dc22db6c9547bc4e85ebd781.png";
+import Image3 from "../../assets/images/b9c7e8870fe0ac0401f06cbb1de85621.png";
+import Image4 from "../../assets/images/c6050127568c5a14b921a24a8f87b1e3.png";
 const slide = () => {
-  const path = "../../assests/images/";
+  const allSlide = [
+    {
+      img: Image1,
+      content:
+        "Having gone through multiple DMS changes over the last 27 years,the recent Tekion implementation was the smoothest I ve ever seen...and it was done 100% remotely!",
+      name: "Katie Bowman Coleman",
+      position: "President,Bowman Auto Group",
+    },
+    {
+      img: Image2,
+      content: "Tekion is not just evolutionary, it's revolutionary.",
+      name: "Todd Ingersoll",
+      position: "CEO/President,Ingersoll Auto Group",
+    },
+    {
+      img: Image3,
+      content:
+        "Tekion is the Netflix to Blockbuster. Anyone who wants to fight the change, anyone who wants to do business in the Stone Age is going to be a dinosaur.",
+      name: "Joe Castelino",
+      position: "Service Director,Stevens Creek Volkswagen",
+    },
+    {
+      img: Image4,
+      content:
+        "Tekion is a game changer and is the wave of the future in the automotive industry.",
+      name: "Michael Winding",
+      position: "General Manager,Gilroy Buick GMC",
+    },
+  ];
+  const [currSlide, setcurrSlide] = useState(allSlide[0]);
+  const [dot, setdot] = useState([
+    {
+      0: "active",
+      1: "",
+      2: "",
+      3: "",
+    },
+  ]);
+  const [i, seti] = useState(0);
+  // setInterval(() => {
+  //   if (i < 4) {
+  //     seti(i + 1);
+  //     setcurrSlide(allSlide[i]);
+  //   } else {
+  //     seti(0);
+  //     setcurrSlide(allSlide[i]);
+  //   }
+  //   console.log(i);
+  // }, 2000);
+  const changeCurrSlide = (index) => {
+    setcurrSlide(allSlide[index]);
+  };
   return (
     <div>
       <div className="slide">
         <div className="slide-img">
-          <img src={Image1} />
+          <img src={currSlide.img} />
           <svg
             className="player"
             height="56"
@@ -31,27 +84,20 @@ const slide = () => {
         </div>
         <div className="slidebar-content">
           <h4>
-            <em>
-              "Having gone through multiple DMS changes over the last 27 years,
-              the recent Tekion implementation was the smoothest I've ever
-              seen...and it was done 100% remotely!"
-            </em>
+            <em>{currSlide.content}</em>
           </h4>
           <p className="person-name">
-            <b>Katie Bowman Coleman</b>
+            <b>{currSlide.name}</b>
           </p>
-          <p className="person-position">President,Bowman Auto Group</p>
+          <p className="person-position">{currSlide.position}</p>
         </div>
       </div>
-      <div className="active">fg</div>
-      <div className="active">re</div>
-      <div className="active">fd</div>
       <div className="slide-dots">
         <ul>
-          <li className="active"></li>
-          <li></li>
-          <li></li>
-          <li></li>
+          <li className={dot[0]} onClick={() => changeCurrSlide(0)}></li>
+          <li className={dot[1]} onClick={() => changeCurrSlide(1)}></li>
+          <li className={dot[2]} onClick={() => changeCurrSlide(2)}></li>
+          <li className={dot[3]} onClick={() => changeCurrSlide(3)}></li>
         </ul>
       </div>
     </div>

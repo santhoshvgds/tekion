@@ -10,7 +10,10 @@
 }
 .section-5 .section-5-content .left {
   margin-top: 50px;
-  width: 80%;
+  width: 30%;
+}
+.section-5 .section-5-content .right {
+  width: 70%;
 }
 .section-5 .section-5-content .left h2 {
   font-size: 32px;
@@ -24,7 +27,7 @@
   font-weight: bold;
 }
 .section-5 .section-5-content .right .slide {
-  display: flex;
+  display: inline-flex;
   padding: 10px 30px 10px 0px;
 }
 .section-5 .section-5-content .right .slide .player {

@@ -1,56 +1,44 @@
 import React, { useState } from "react";
 import SlideNav from "../slideNav";
 import "./index.css";
-import ReactModal from "react-modal";
+import "../modal/modal.css";
 import Model from "../modal";
-const customStyles = {
-  content: {
-    transform: "translate(-0%, -293%)",
-    border: "none",
-    backgroundColor: "white",
-    zIndex: "150",
-    position: "fixed",
-    width: "213vh",
-    overflow: "hidden",
-  },
-};
 
 const index = () => {
   const [menuStatus, setMenuStatus] = useState("close");
-  const [style, setStyle] = useState("menu");
-  const [showModal, setshowModal] = useState(false);
-  const handleOpenModal = () => {
-    setshowModal(true);
-  };
-  const handleCloseModal = () => {
-    setshowModal(false);
+  const [navStyle, setnavStyle] = useState("slide-nav");
+  const [modalStyle, setmodalStyle] = useState("modal");
+  const [showModal, setshowModal] = useState("close");
+  const handleModelToggle = () => {
+    switch (showModal) {
+      case "open":
+        setshowModal("close");
+        setmodalStyle("modal-active");
+        break;
+      case "close":
+        setshowModal("open");
+        setmodalStyle("modal");
+        break;
+    }
   };
   const handleClickSildeBar = () => {
     switch (menuStatus) {
       case "open":
         setMenuStatus("close");
-        setStyle("menu active");
+        setnavStyle("slide-nav nav-active");
         break;
       case "close":
         setMenuStatus("open");
-        setStyle("menu");
+        setnavStyle("slide-nav");
         break;
     }
   };
   return (
     <React.Fragment>
-      <ReactModal
-        appElement={document.getElementById("body")}
-        isOpen={showModal}
-        contentLabel="onRequestClose Example"
-        onRequestClose={handleCloseModal}
-        style={customStyles}
-        className="Modal"
-        overlayClassName="Overlay"
-      >
-        <Model modalClose={handleCloseModal} />
-      </ReactModal>
-      <div className={style}>
+      <div className={modalStyle}>
+        <Model modalClose={handleModelToggle} />
+      </div>
+      <div className={navStyle}>
         <SlideNav sildeBar={handleClickSildeBar} />
       </div>
       <div className="nav">
@@ -103,7 +91,7 @@ const index = () => {
           </div>
           <div className="nav-left">
             <div className="request-demo">
-              <h4 onClick={handleOpenModal}>Request Demo</h4>
+              <h4 onClick={handleModelToggle}>Request Demo</h4>
             </div>
           </div>
         </div>
