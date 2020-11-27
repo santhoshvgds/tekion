@@ -32,7 +32,7 @@ module.exports = {
         ],
       },
       {
-        test: /\.(jpg|png)$/,
+        test: /\.(jpg|png|svg)$/,
         loader: "url-loader",
         // loader: "file?name=[path][name].[ext]",
         include: path.join(__dirname, "src/assets/images"),

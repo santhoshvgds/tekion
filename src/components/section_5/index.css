@@ -1,0 +1,85 @@
+.section-5 {
+  padding: 100px;
+  font-family: Inter, sans-serif;
+}
+.section-5-content {
+  border-radius: 10px;
+  padding: 60px 90px;
+  display: flex;
+  background-color: #e0e0e061;
+}
+.section-5 .section-5-content .left {
+  margin-top: 50px;
+  width: 80%;
+}
+.section-5 .section-5-content .left h2 {
+  font-size: 32px;
+  margin-bottom: 40px;
+}
+.section-5 .section-5-content .left a {
+  font-size: 15px;
+  background: -webkit-linear-gradient(#ffc371, #ff626d);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+}
+.section-5 .section-5-content .right .slide {
+  display: flex;
+  padding: 10px 30px 10px 0px;
+}
+.section-5 .section-5-content .right .slide .player {
+  margin-top: -32px;
+  margin-left: 105px;
+}
+.section-5 .section-5-content .right .slide .slidebar-content {
+  font-size: 20px;
+  line-height: 26px;
+  letter-spacing: -0.64px;
+  font-weight: 600;
+  color: #2f313c;
+  padding: 10px 0px;
+}
+.section-5 .section-5-content .right .slide .slidebar-content p.person-name {
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: bold;
+  padding-top: 15px;
+}
+.section-5
+  .section-5-content
+  .right
+  .slide
+  .slidebar-content
+  p.person-position {
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 15px;
+  color: #818389;
+  margin-top: 2px;
+  letter-spacing: 1px;
+}
+.section-5 .section-5-content .right .slide img {
+  padding: 0px 20px;
+  width: 150px;
+}
+.section-5 .section-5-content .right .active {
+  display: none;
+}
+.section-5 .section-5-content .right .slide-dots {
+  float: right;
+}
+.section-5 .section-5-content .right .slide-dots ul li {
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  background-color: #dadada;
+  margin-left: 6px;
+}
+.section-5 .section-5-content .right .slide-dots ul li.active {
+  background-color: #05deba;
+  width: 11px;
+  height: 11px;
+}

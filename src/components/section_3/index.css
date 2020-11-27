@@ -1,0 +1,24 @@
+.section-3 {
+  margin: 55px;
+  font-family: Inter, sans-serif;
+}
+.section-3 .row-1 {
+  display: flex;
+  justify-content: space-between;
+}
+.section-3 .row-1 h1 {
+  color: #15161f;
+  font-weight: 100;
+  font-size: 42px;
+}
+.section-3 .section-3-button {
+  margin-top: 25px;
+}
+.section-3 .section-3-button h3 {
+  color: black;
+  background-color: #05deba;
+  font-size: 16px;
+  padding: 12px 33px;
+  cursor: pointer;
+  border-radius: 30px;
+}

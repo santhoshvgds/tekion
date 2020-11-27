@@ -1,0 +1,82 @@
+.modal-content {
+  padding: 30px 130px;
+  height: 100%;
+}
+.modal-content .row-1 {
+  display: inline-flex;
+  width: 100%;
+}
+.modal-content .row-1 .close-modal {
+  padding-left: 80%;
+  font-size: 14px;
+  color: #4d515b;
+  cursor: pointer;
+}
+
+.modal-content .row-2 {
+  width: 100%;
+  display: flex;
+  padding: 30px 0px;
+}
+.modal-content .row-2 .modal-left {
+  padding: 50px 40px;
+  width: 50%;
+  color: #15161f;
+}
+.modal-content .modal-left p {
+  color: #4d515b;
+  font-size: 20px;
+  margin: 20px 0px 30px 0px;
+  font-weight: 100;
+  line-height: 1.4;
+}
+.modal-content .row-2 .modal-left .img {
+  width: 330px;
+  padding: 30px 0px;
+}
+.modal-content .row-2 .modal-right {
+  padding: 10px 0px 10px 200px;
+}
+.modal-content .row-2 .modal-right .form {
+  /* width: 80%; */
+  padding: 50px 0px;
+}
+.modal-content .row-2 .modal-right .form input,
+select {
+  border: none;
+  border-bottom: 1px solid grey;
+  margin-right: 20px;
+}
+input[type="text"],
+input[type="number"],
+input[type="email"],
+select {
+  padding: 10px 10px 10px 0px;
+  margin-bottom: 20px;
+  color: gray;
+}
+select {
+  width: 198px;
+  background-color: white;
+}
+textarea {
+  width: 73%;
+
+  border: none;
+  border-bottom: 1px solid gray;
+  padding: 20px 20px 30px 0px;
+}
+input::-webkit-input-placeholder,
+select,
+textarea {
+  font-size: 15.4px;
+}
+.submit-button h3 {
+  color: white;
+  background-color: gainsboro;
+  font-size: 16px;
+  padding: 12px 33px;
+  width: 190px;
+  margin-top: 60px;
+  border-radius: 30px;
+}

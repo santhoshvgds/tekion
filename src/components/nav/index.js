@@ -1,10 +1,30 @@
 import React, { useState } from "react";
 import SlideNav from "../slideNav";
 import "./index.css";
+import ReactModal from "react-modal";
+import Model from "../modal";
+const customStyles = {
+  content: {
+    transform: "translate(-0%, -293%)",
+    border: "none",
+    backgroundColor: "white",
+    zIndex: "150",
+    position: "fixed",
+    width: "213vh",
+    overflow: "hidden",
+  },
+};
 
 const index = () => {
-  const [menuStatus, setMenuStatus] = useState("open");
-  const [style, setStyle] = useState("menu active");
+  const [menuStatus, setMenuStatus] = useState("close");
+  const [style, setStyle] = useState("menu");
+  const [showModal, setshowModal] = useState(true);
+  const handleOpenModal = () => {
+    setshowModal(true);
+  };
+  const handleCloseModal = () => {
+    setshowModal(false);
+  };
   const handleClickSildeBar = () => {
     switch (menuStatus) {
       case "open":
@@ -19,6 +39,17 @@ const index = () => {
   };
   return (
     <React.Fragment>
+      <ReactModal
+        appElement={document.getElementById("body")}
+        isOpen={showModal}
+        contentLabel="onRequestClose Example"
+        onRequestClose={handleCloseModal}
+        style={customStyles}
+        className="Modal"
+        overlayClassName="Overlay"
+      >
+        <Model modalClose={handleCloseModal} />
+      </ReactModal>
       <div className={style}>
         <SlideNav sildeBar={handleClickSildeBar} />
       </div>
@@ -72,7 +103,7 @@ const index = () => {
           </div>
           <div className="nav-left">
             <div className="request-demo">
-              <h4>Request Demo</h4>
+              <h4 onClick={handleOpenModal}>Request Demo</h4>
             </div>
           </div>
         </div>
