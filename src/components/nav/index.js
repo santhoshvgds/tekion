@@ -18,7 +18,7 @@ const customStyles = {
 const index = () => {
   const [menuStatus, setMenuStatus] = useState("close");
   const [style, setStyle] = useState("menu");
-  const [showModal, setshowModal] = useState(true);
+  const [showModal, setshowModal] = useState(false);
   const handleOpenModal = () => {
     setshowModal(true);
   };
