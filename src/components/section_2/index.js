@@ -1,10 +1,16 @@
 import React, { useState, useEffect } from "react";
 import "./index.css";
+import ProgressBar from "react-animated-progress-bar";
+import CountUp from "react-countup";
 
 import "../modal/modal.css";
 import Model from "../modal";
 
 const Benefits = () => {
+  const colorfirst = {
+    backgroundImage:
+      "linear-gradient(to left, rgb(85, 255, 222),rgb(36, 178, 236))",
+  };
   const [modalStyle, setmodalStyle] = useState("modal");
   const [showModal, setshowModal] = useState("close");
   const handleModelToggle = () => {
@@ -50,12 +56,24 @@ const Benefits = () => {
                 </div>
                 <div style={{ marginTop: "5px", marginBottom: "5px" }}>
                   <span id="productioncount">
-                    $<span id="numbercount">9,297</span>
+                    $
+                    <span id="numbercount">
+                      <CountUp end={9297} duration={5} /> +
+                    </span>
                     <span style={{ fontSize: "18px", marginLeft: "5px" }}>
                       monthly
                     </span>
                   </span>
-                  <div id="border"></div>
+                  <ProgressBar
+                    defColor={{
+                      excellent: "#55ffde",
+                    }}
+                    width="250px"
+                    height="8px"
+                    rect
+                    percentage="100"
+                    rectBorderRadius="20px"
+                  />
                 </div>
               </div>
               <div className="col-lg-6" style={{ marginTop: "40px" }}>
@@ -64,12 +82,24 @@ const Benefits = () => {
                 </div>
                 <div style={{ marginTop: "5px", marginBottom: "5px" }}>
                   <span id="productioncount">
-                    $<span id="numbercount">31,900</span>
+                    $
+                    <span id="numbercount">
+                      <CountUp end={31900} duration={5} /> +
+                    </span>
                     <span style={{ fontSize: "18px", marginLeft: "5px" }}>
                       monthly
                     </span>
                   </span>
-                  <div id="border"></div>
+                  <ProgressBar
+                    defColor={{
+                      excellent: "#2157f5",
+                    }}
+                    width="300px"
+                    height="8px"
+                    rect
+                    percentage="100"
+                    rectBorderRadius="20px"
+                  />
                 </div>
               </div>
               <div className="col-lg-6" style={{ marginTop: "40px" }}>
@@ -78,12 +108,24 @@ const Benefits = () => {
                 </div>
                 <div style={{ marginTop: "5px", marginBottom: "5px" }}>
                   <span id="productioncount">
-                    $<span id="numbercount">4,000</span>
+                    $
+                    <span id="numbercount">
+                      <CountUp end={4000} duration={5} /> +
+                    </span>
                     <span style={{ fontSize: "18px", marginLeft: "5px" }}>
                       monthly
                     </span>
                   </span>
-                  <div id="border"></div>
+                  <ProgressBar
+                    defColor={{
+                      excellent: "#f5736d",
+                    }}
+                    width="200px"
+                    height="8px"
+                    rect
+                    percentage="100"
+                    rectBorderRadius="20px"
+                  />
                 </div>
               </div>
               <div className="col-lg-6" style={{ marginTop: "40px" }}>
@@ -92,12 +134,24 @@ const Benefits = () => {
                 </div>
                 <div style={{ marginTop: "5px", marginBottom: "5px" }}>
                   <span id="productioncount">
-                    $<span id="numbercount">4,500</span>
+                    $
+                    <span id="numbercount">
+                      <CountUp end={4500} duration={5} /> +
+                    </span>
                     <span style={{ fontSize: "18px", marginLeft: "5px" }}>
                       monthly
                     </span>
                   </span>
-                  <div id="border"></div>
+                  <ProgressBar
+                    defColor={{
+                      excellent: "#8e3667",
+                    }}
+                    width="200px"
+                    height="8px"
+                    rect
+                    percentage="100"
+                    rectBorderRadius="20px"
+                  />
                 </div>
               </div>
             </div>
