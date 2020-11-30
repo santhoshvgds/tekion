@@ -37,6 +37,12 @@ module.exports = {
         // loader: "file?name=[path][name].[ext]",
         include: path.join(__dirname, "src/assets/images"),
       },
+      {
+        test: /\.mp4$/,
+        loader: "url-loader",
+        // loader: "file?name=[path][name].[ext]",
+        include: path.join(__dirname, "src/assets/video"),
+      },
     ],
   },
   plugins: [

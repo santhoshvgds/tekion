@@ -4,12 +4,15 @@
   width: 100%;
   font-family: Inter, sans-serif;
 }
-.modal-content .row-1 {
+.modal-content .row-1,
+.modal-content-vid .row-1 {
   display: inline-flex;
   width: 100%;
 }
-.modal-content .row-1 .close-modal {
+.modal-content .row-1 .close-modal,
+.modal-content-vid .row-1 .close-modal {
   padding-left: 80%;
+  z-index: 1000;
   font-size: 14px;
   color: #4d515b;
   cursor: pointer;
@@ -99,4 +102,16 @@ input:focus,
 select:focus,
 textarea:focus {
   outline: none !important;
+}
+.row-fix {
+  position: fixed;
+
+  padding: 10px;
+}
+.row-2 video {
+  width: 100%;
+  z-index: 0;
+  height: 90%;
+}
+.modal-content-vid {
 }

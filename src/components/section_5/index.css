@@ -36,6 +36,7 @@
 }
 .section-5 .section-5-content .right .slide .player {
   margin-top: -32px;
+  cursor: pointer;
   width: 50px;
   margin-left: 105px;
 }
