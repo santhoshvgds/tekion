@@ -2,7 +2,7 @@ import React from "react";
 import "./index.css";
 
 const modalVid = (props) => {
-//   console.log(props);
+  //   console.log(props);
   return (
     <div className="modal-content-vid">
       <div className="row-1 row-fix">
@@ -35,11 +35,15 @@ const modalVid = (props) => {
         </h3>
       </div>
       <div className="row-2">
-        <video
-          src="https://tekion-ui-theme.s3-us-west-1.amazonaws.com/GM-Global-Connect/assets/Tekion_Zoom_RT022.mp4"
-          autoPlay
-          controls
-        />
+        {props.ifPlay ? (
+          <video
+            src="https://tekion-ui-theme.s3-us-west-1.amazonaws.com/GM-Global-Connect/assets/Tekion_Zoom_RT022.mp4"
+            autoPlay
+            controls
+          />
+        ) : (
+          ""
+        )}
       </div>
     </div>
   );

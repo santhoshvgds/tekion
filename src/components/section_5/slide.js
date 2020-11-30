@@ -8,6 +8,7 @@ import "../modal/modal.css";
 const slide = () => {
   const [modalStyle, setmodalStyle] = useState("modal");
   const [showModal, setshowModal] = useState("close");
+  const [play, setPlay] = useState(false);
   const handleModelToggle = () => {
     switch (showModal) {
       case "open":
@@ -15,7 +16,8 @@ const slide = () => {
         setmodalStyle("modal-active");
         break;
       case "close":
-        console.log("object");
+        // console.log("object");
+        setPlay(true)
         setshowModal("open");
         setmodalStyle("modal modal-active");
         break;
@@ -67,7 +69,7 @@ const slide = () => {
   return (
     <React.Fragment>
       <div className={modalStyle}>
-        <ModalVid modalClose={handleModelToggle} />
+        <ModalVid modalClose={handleModelToggle} ifPlay={play}/>
       </div>
       <div>
         <div className="slide">
