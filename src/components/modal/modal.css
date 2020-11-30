@@ -11,6 +11,7 @@
 .modal-active {
   background-color: white;
   opacity: 1;
+  height: 100%;
   z-index: 1000;
   visibility: visible;
   transform: translateX(0);
