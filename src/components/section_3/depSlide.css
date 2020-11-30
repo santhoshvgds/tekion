@@ -13,8 +13,41 @@
 #departments {
   width: 80%;
   margin: 0 auto;
-}
-.carousel {
-  z-index: 0;
+  margin-top: 50px;
   position: relative;
+}
+.carousel-indicators li {
+  display: inline-block;
+  margin: 10px;
+  text-indent: 0;
+  cursor: pointer;
+  border: none;
+  background-color: white;
+}
+.carousel-indicators .active {
+  margin: 10px;
+  background-color: #8ad7c1;
+}
+#department .carousel-indicators li {
+  width: 200px;
+}
+.customcarousel {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.customcarousel a {
+  width: 30px;
+  display: block;
+  text-align: center;
+  padding-top: 5px;
+  height: 30px;
+  border-radius: 50%;
+}
+.carouseltext1 {
+  width: 70%;
+  margin: 0 auto;
+}
+.carouseltext1 > div {
+  margin-left: 2px;
 }
