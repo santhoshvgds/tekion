@@ -12,11 +12,12 @@ a {
   position: fixed;
   font-family: Inter, sans-serif;
   background-color: black;
-  padding: 30px 0px;
+  padding: 30px 0px 15px 0px;
   z-index: 1;
   text-align: center;
 }
 .nav-content {
+  width: 100%;
   margin: 0px 50px;
 }
 .nav-right,
@@ -25,7 +26,7 @@ a {
 .nav-left,
 .nav-menu,
 .brand-name {
-  display: inline-block;
+  display: inline-flex;
 }
 .nav-menu:hover,
 .nav-left .request-demo h4:hover {

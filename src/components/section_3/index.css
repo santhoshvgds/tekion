@@ -4,6 +4,7 @@
 }
 .section-3 .row-1 {
   display: flex;
+  padding-bottom: 30px;
   justify-content: space-between;
 }
 .section-3 .row-1 h1 {

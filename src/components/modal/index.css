@@ -1,6 +1,8 @@
 .modal-content {
-  padding: 30px 130px;
+  padding: 30px 30px 30px 130px;
   height: 100%;
+
+  font-family: Inter, sans-serif;
 }
 .modal-content .row-1 {
   display: inline-flex;
@@ -30,17 +32,21 @@
   font-weight: 100;
   line-height: 1.4;
 }
+h2 {
+  font-size: 24px;
+  font-weight: bold;
+}
 .modal-content .row-2 .modal-left .img {
   width: 330px;
   padding: 30px 0px;
 }
 .modal-content .row-2 .modal-right {
   width: 60%;
-  padding: 10px 0px 10px 100px;
+  padding: 10px 0px 10px 80px;
 }
 .modal-content .row-2 .modal-right .form {
   /* width: 80%; */
-  padding: 50px 0px;
+  padding: 30px 0px;
 }
 .modal-content .row-2 .modal-right .form input,
 select {
@@ -56,12 +62,21 @@ select {
   margin-bottom: 20px;
   color: gray;
 }
+h1 {
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 38px;
+  letter-spacing: -1px;
+}
+input,
 select {
-  width: 225px;
+  width: 180px;
+}
+select {
   background-color: white;
 }
 textarea {
-  width: 450px;
+  width: 380px;
   border: none;
   border-bottom: 1px solid gray;
   padding: 20px 20px 30px 0px;
@@ -69,14 +84,14 @@ textarea {
 input::-webkit-input-placeholder,
 select,
 textarea {
-  font-size: 15.4px;
+  font-size: 14px;
 }
 .submit-button h3 {
   color: white;
   background-color: gainsboro;
   font-size: 16px;
   padding: 12px 33px;
-  width: 190px;
+  width: 250px;
   margin-top: 60px;
   border-radius: 30px;
 }

@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./index.css";
 import Model from "../modal";
+import DepSlide from "./depSlide";
 import "../modal/modal.css";
 const index = () => {
   const [modalStyle, setmodalStyle] = useState("modal");
@@ -36,7 +37,9 @@ const index = () => {
             <h3 onClick={handleModelToggle}>Contact Us</h3>
           </div>
         </div>
-        <div className="row-2"></div>
+        <div className="row-2">
+          <DepSlide />
+        </div>
       </div>
     </React.Fragment>
   );

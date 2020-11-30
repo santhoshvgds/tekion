@@ -89,7 +89,7 @@ const index = () => {
               </a>
             </ul>
           </div>
-          <div className="nav-left">
+          <div className="nav-left ">
             <div className="request-demo">
               <h4 onClick={handleModelToggle}>Request Demo</h4>
             </div>

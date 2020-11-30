@@ -2,17 +2,18 @@
   background-image: url("../../assets/images/0f40c79d06f5b302e3ccc989086980bf.jpg");
   height: 100%;
   background-size: cover;
-  background-position-y: 110px;
+  background-position-y: 120px;
 }
 .section-1-content {
   font-family: Inter, sans-serif;
   color: white;
-  padding: 56vh 0px 15vh 0px;
+  padding: 58vh 0px 19vh 0px;
   justify-content: center;
   text-align: center;
 }
 .section-1-content h1 {
   letter-spacing: -1.25px;
+  line-height: 55px;
   font-size: 50px;
   margin-bottom: 30px;
 }

@@ -1,0 +1,20 @@
+#departments .dot {
+  height: 4px;
+  width: 4px;
+  margin-right: 10px;
+  background-color: #000;
+  border-radius: 50%;
+  display: inline-block;
+}
+#departments .options {
+  font-weight: bold;
+  margin: 10px 0px;
+}
+#departments {
+  width: 80%;
+  margin: 0 auto;
+}
+.carousel {
+  z-index: 0;
+  position: relative;
+}

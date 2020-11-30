@@ -1,0 +1,76 @@
+#tekionfeatures{
+    margin: 100px;
+}
+#tekionfeatures #heading{
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+#tekionfeatures #description{
+    text-align: center;
+    font-size: 20px;
+    width: 840px;
+    margin: 0 auto;
+}
+#tekionfeatures .contentbox img{
+    width: 100%;
+    height: 100%;
+}
+#tekionfeatures .contentboxhead{
+    margin-top: 50px;
+}
+#tekionfeatures .contentbox{
+    margin-top: 30px;
+    height: 550px;
+    width: 100%;
+    position: relative;
+}
+#tekionfeatures #topservice{
+    position: absolute;
+    width: 100%;
+    top: 60px;
+}
+#tekionfeatures #bottomservice{
+    position: absolute;
+    width: 100%;
+    bottom: 50px;
+}
+#tekionfeatures #digitalservicehead{
+    width: 200px;
+    margin: 0 auto;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+#tekionfeatures #digitalservicecontent{
+    width: 280px;
+    text-align: center;
+    margin: 0 auto;
+}
+#tekionfeatures #learnmore{
+    text-align: center;
+    margin-top: 15px;
+}
+#tekionfeatures #learnmore a{
+    color: red;
+}
+
+
+@media only screen and (max-width: 840px) {
+    #tekionfeatures #description{
+        width: 400px;
+    }
+    #tekionfeatures{
+        margin: 20px;
+    }
+    #tekionfeatures #heading{
+        text-align: left;
+    }
+    #tekionfeatures #description{
+        text-align: left;
+        font-size: 12px;
+    }
+
+  }
