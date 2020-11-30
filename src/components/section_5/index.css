@@ -4,9 +4,12 @@
 }
 .section-5-content {
   border-radius: 10px;
-  padding: 60px 90px;
+  padding: 60px 50px 60px 90px;
   display: flex;
   background-color: #e0e0e061;
+}
+.slide-img {
+  width: 200px;
 }
 .section-5 .section-5-content .left {
   margin-top: 50px;
@@ -33,6 +36,7 @@
 }
 .section-5 .section-5-content .right .slide .player {
   margin-top: -32px;
+  width: 50px;
   margin-left: 105px;
 }
 .section-5 .section-5-content .right .slide .slidebar-content {
@@ -44,12 +48,14 @@
 }
 .section-5 .section-5-content .right .slide .slidebar-content h4 em {
   font-size: 18px;
+  width: 450px;
 }
 .section-5 .section-5-content .right .slide .slidebar-content p.person-name {
   font-size: 16px;
   line-height: 21px;
   font-weight: bold;
   padding-top: 15px;
+  margin-bottom: 0px;
 }
 .section-5
   .section-5-content

@@ -8,6 +8,7 @@ a {
   list-style: none;
 }
 .nav {
+  transition: 0.5s linear;
   width: 100%;
   position: fixed;
   font-family: Inter, sans-serif;

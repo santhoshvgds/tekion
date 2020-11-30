@@ -1,7 +1,7 @@
 .modal-content {
   padding: 30px 30px 30px 130px;
   height: 100%;
-
+  width: 100%;
   font-family: Inter, sans-serif;
 }
 .modal-content .row-1 {

@@ -8,27 +8,27 @@ const slide = () => {
     {
       img: Image1,
       content:
-        "Having gone through multiple DMS changes over the last 27 years,the recent Tekion implementation was the smoothest I ve ever seen...and it was done 100% remotely!",
-      name: "Katie Bowman Coleman",
+        '"Having gone through multiple DMS changes over the last 27 years,the recent Tekion implementation was the smoothest I ve ever seen...and it was done 100% remotely!',
+      name: 'Katie Bowman Coleman"',
       position: "President,Bowman Auto Group",
     },
     {
       img: Image2,
-      content: "Tekion is not just evolutionary, it's revolutionary.",
+      content: '"Tekion is not just evolutionary, it\'s revolutionary."',
       name: "Todd Ingersoll",
       position: "CEO/President,Ingersoll Auto Group",
     },
     {
       img: Image3,
       content:
-        "Tekion is the Netflix to Blockbuster. Anyone who wants to fight the change, anyone who wants to do business in the Stone Age is going to be a dinosaur.",
+        '"Tekion is the Netflix to Blockbuster. Anyone who wants to fight the change, anyone who wants to do business in the Stone Age is going to be a dinosaur."',
       name: "Joe Castelino",
       position: "Service Director,Stevens Creek Volkswagen",
     },
     {
       img: Image4,
       content:
-        "Tekion is a game changer and is the wave of the future in the automotive industry.",
+        '"Tekion is a game changer and is the wave of the future in the automotive industry."',
       name: "Michael Winding",
       position: "General Manager,Gilroy Buick GMC",
     },
