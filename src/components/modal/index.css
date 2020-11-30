@@ -19,7 +19,7 @@
   padding: 30px 0px;
 }
 .modal-content .row-2 .modal-left {
-  padding: 50px 40px;
+  padding: 50px 0px;
   width: 50%;
   color: #15161f;
 }
@@ -35,7 +35,8 @@
   padding: 30px 0px;
 }
 .modal-content .row-2 .modal-right {
-  padding: 10px 0px 10px 200px;
+  width: 60%;
+  padding: 10px 0px 10px 100px;
 }
 .modal-content .row-2 .modal-right .form {
   /* width: 80%; */
@@ -56,12 +57,11 @@ select {
   color: gray;
 }
 select {
-  width: 190px;
+  width: 225px;
   background-color: white;
 }
 textarea {
-  width: 78%;
-
+  width: 450px;
   border: none;
   border-bottom: 1px solid gray;
   padding: 20px 20px 30px 0px;
