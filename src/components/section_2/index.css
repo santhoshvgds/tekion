@@ -1,54 +1,54 @@
-#benefits{
-    margin: 100px;
+#benefits {
+  margin: 100px;
 }
-#benefits #unlocktext{
-    width: 250px;
-    font-size: 30px;
-    font-weight: bold;
+#benefits #unlocktext {
+  width: 250px;
+  font-size: 30px;
+  font-weight: bold;
 }
-#benefits #unlockdescription{
-    margin-top: 10px;
-    width: 520px;
-    font-size: 20px;
+#benefits #unlockdescription {
+  margin-top: 10px;
+  width: 520px;
+  font-size: 20px;
 }
-#benefits #numbercount{
-    font-size: 30px;
-    font-weight: bold;
+#benefits #numbercount {
+  font-size: 30px;
+  font-weight: bold;
 }
-#benefits #productioncount{
-    font-weight: bold;
-    font-size: 30px;
+#benefits #productioncount {
+  font-weight: bold;
+  font-size: 30px;
 }
-#benefits #demobutton button{
-    padding: 10px 30px;
-    border-radius: 20px;
-    background-color: #94d3ac;
-    border: none;
-    font-weight: bold;
+#benefits #demobutton button {
+  padding: 10px 30px;
+  border-radius: 20px;
+  background-color: #05deba;
+  border: none;
+  font-weight: bold;
 }
-#benefits #demobutton{
-    margin-top: 40px;
+#benefits #demobutton button {
+  outline: none !important;
 }
-#benefits #benefitstext{
-    width: 280px;
-    height: 80px;
+#benefits #demobutton {
+  margin-top: 40px;
 }
-#benefits #border{
-    margin-top: 20px;
-    border-bottom-width: 10px;
-    border-bottom-style: solid;
-    width: 150px;
-    border-radius: 20px;
-
+#benefits #benefitstext {
+  width: 280px;
+  height: 80px;
+}
+#benefits #border {
+  margin-top: 20px;
+  border-bottom-width: 10px;
+  border-bottom-style: solid;
+  width: 150px;
+  border-radius: 20px;
 }
 @media only screen and (max-width: 840px) {
-    #benefits{
-        margin: 10px;
-    }
-    #benefits #unlockdescription{
-        width: 400px;
-        font-size: 15px;
-    }
-
-
+  #benefits {
+    margin: 10px;
   }
+  #benefits #unlockdescription {
+    width: 400px;
+    font-size: 15px;
+  }
+}

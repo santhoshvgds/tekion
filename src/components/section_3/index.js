@@ -16,7 +16,7 @@ const index = () => {
       case "close":
         console.log("object");
         setshowModal("open");
-        setmodalStyle("modal");
+        setmodalStyle("modal modal-active");
         console.log(modalStyle);
         break;
     }

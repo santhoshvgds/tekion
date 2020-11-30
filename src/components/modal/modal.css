@@ -1,9 +1,8 @@
 .modal {
   background-color: white;
   height: 100vh;
-  width: 100vh;
   position: fixed;
-  overflow-y: scroll;
+  overflow-y: hidden;
   overflow-x: hidden;
   transform: translateX(-100%);
   z-index: 1000;
@@ -13,8 +12,8 @@
   opacity: 1;
   height: 100%;
   z-index: 1000;
+  display: block;
   visibility: visible;
   transform: translateX(0);
-
   position: fixed;
 }
