@@ -26,6 +26,7 @@ const index = () => {
       <div className={modalStyle}>
         <Model modalClose={handleModelToggle} />
       </div>
+      <div id="section3"></div>
       <div className="section-3">
         <div className="row-1">
           <h1>

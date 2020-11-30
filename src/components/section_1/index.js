@@ -1,6 +1,6 @@
 import React from "react";
 import "./index.css";
-import Demo from "../../assets//images/0f40c79d06f5b302e3ccc989086980bf.jpg";
+import AnchorLink from "react-anchor-link-smooth-scroll";
 
 const index = () => {
   return (
@@ -12,7 +12,10 @@ const index = () => {
           retail is here
         </h1>
         <div className="section-1-button">
-          <h3>Discover Products</h3>
+          <AnchorLink href="#section3">
+            <h3>Discover Products</h3>
+          </AnchorLink>
+          {/* <a href="#section3"></a> */}
         </div>
       </div>
     </div>

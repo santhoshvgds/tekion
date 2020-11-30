@@ -1,4 +1,5 @@
 .section-3 {
+  padding: 80px 10px 0px 10px;
   margin: 55px;
   font-family: Inter, sans-serif;
 }
@@ -9,7 +10,9 @@
 }
 .section-3 .row-1 h1 {
   color: #15161f;
-  font-weight: 100;
+  font-weight: 300;
+  letter-spacing: -2.5px;
+  line-height: 45px;
   font-size: 42px;
 }
 .section-3 .section-3-button {
@@ -17,6 +20,7 @@
 }
 .section-3 .section-3-button h3 {
   color: black;
+  font-weight: bold;
   background-color: #05deba;
   font-size: 16px;
   padding: 12px 33px;

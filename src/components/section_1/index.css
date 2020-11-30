@@ -20,6 +20,11 @@
 .section-1-content .section-1-button {
   display: inline-block;
 }
+.section-1-content .section-1-button a,
+.section-1-content .section-1-button a:hover {
+  text-decoration: none;
+  transition: 1s linear;
+}
 .section-1-content .section-1-button h3 {
   color: black;
   background-color: #05deba;
