@@ -51,3 +51,7 @@
 .carouseltext1 > div {
   margin-left: 2px;
 }
+
+.carousel {
+  z-index: 0;
+}
