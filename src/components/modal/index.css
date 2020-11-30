@@ -105,7 +105,7 @@ textarea:focus {
 }
 .row-fix {
   position: fixed;
-
+  z-index: 1000;
   padding: 10px;
 }
 .row-2 video {
