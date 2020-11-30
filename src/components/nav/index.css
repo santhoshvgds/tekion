@@ -82,7 +82,7 @@ a {
 .nav-active {
   opacity: 1;
   visibility: visible;
-  transition: 0.5s linear;
+  transition: 0.2s ease-in-out;
   width: 400px;
   transform: translateX(0);
 }
